@@ -22,6 +22,7 @@
     --secondary-color: #088178;
     --primary-text: #222;
     --secondary-text: #465b52;
+    --red-text: #ec544e;
     --border-color: #cce7d0;
     --primary-font: 'League Spartan', sans-serif;
 }
@@ -102,6 +103,31 @@ button {
 
 .section-m {
     margin: 40px 0;
+}
+
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: var(--bg-dark);
+    background-color: var(--bg-white);
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+button.white {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: var(--bg-white);
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid var(--bg-white);
+    outline: none;
+    transition: 0.2s ease;
 }
 
 /* Header Start */
@@ -196,7 +222,8 @@ button {
 }
 
 #feature .fe-box {
-    width: 200px;
+    width: 13%;
+    min-width: 200px;
     text-align: center;
     padding: 25px 15px;
     box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
@@ -320,4 +347,250 @@ button {
     position: absolute;
     bottom: 20px;
     right: 10px;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(/images/banner/b2.jpg);
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4 {
+    color: var(--bg-white);
+    font-size: 30px;
+}
+
+#banner h2 {
+    color: var(--bg-white);
+    font-size: 30px;
+    padding: 10px 0px;
+}
+
+#banner h2 span {
+    color: var(--red-text);
+}
+
+#banner .normal:hover {
+    color: var(--bg-white);
+    background-color: var(--secondary-color);
+}
+
+#ads-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#ads-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(/images/banner/b17.jpg);
+    min-width: 48%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+}
+
+#ads-banner .box1 {
+    background-image: url(/images/banner/b10.jpg);
+}
+
+#ads-banner h4 {
+    color: var(--bg-white);
+    font-size: 24px;
+    font-weight: 300;
+}
+
+#ads-banner h2 {
+    color: var(--primary-text);
+    font-size: 32px;
+    font-weight: 800;
+}
+
+#ads-banner span {
+    color: var(--bg-white);
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+#ads-banner .banner-box:hover button {
+    background: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+#ads-banner .banner-box1:hover button {
+    background: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+#ev-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+
+#ev-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(/images/banner/b7.jpg);
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    margin-bottom: 20px;
+}
+
+#ev-banner .box1 {
+    background-image: url(/images/banner/b4.jpg);
+}
+
+#ev-banner .box2 {
+    background-image: url(/images/banner/b18.jpg);
+}
+
+#ev-banner h2 {
+    color: var(--bg-white);
+    font-weight: 900;
+    font-size: 22px;
+}
+
+#ev-banner h3 {
+    color: var(--red-text);
+    font-weight: 900;
+    font-size: 22px;
+}
+
+#newsletter {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(/images/banner/b14.png);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+
+}
+
+#newsletter h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--bg-white);
+}
+
+#newsletter p {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+#newsletter p span {
+    color: var(--red-text);
+}
+
+#newsletter .form {
+    display: flex;
+    width: 25%;
+}
+
+#newsletter input {
+    padding: 15px 30px;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#newsletter button {
+    color: var(--bg-white);
+    background-color: var(--secondary-color);
+    white-space: nowrap;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 80px;
+}
+
+#footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+#footer .logo {
+    margin-bottom: 30px;
+}
+
+#footer .col h4 {
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+#footer .col p {
+    font-size: 14px;
+    margin: 0 0 8px 0;
+}
+
+#footer .col a {
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--primary-text);
+    margin-bottom: 10px;
+    transition: 0.2s ease;
+}
+
+#footer .follow {
+    margin: 10px 0px 0px 0px;
+}
+
+#footer .follow .icon {
+    font-size: 16px;
+    color: var(--secondary-text);
+    margin-top: -10px;
+    padding-right: 4px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#footer .col a:hover,
+#footer .follow .icon:hover {
+    color: var(--secondary-color);
+}
+
+#footer .install .row img {
+    border: 1px solid var(--secondary-color);
+    border-radius: 6px;
+}
+
+#footer .install img {
+    margin: 10px 0px 15px 0px;
+}
+
+footer .copyright {
+    text-align: center;
+    color: var(--secondary-color);
 }
