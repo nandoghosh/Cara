@@ -180,6 +180,15 @@ button.white {
     left: 20px;
 }
 
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
 /* Home Page */
 #hero {
     background-image: url(/images/hero4.png);
@@ -509,7 +518,7 @@ button.white {
 }
 
 #newsletter input {
-    padding: 15px 30px;
+    padding: 14px 30px;
     font-size: 14px;
     width: 100%;
     border: 1px solid transparent;
@@ -593,4 +602,5 @@ button.white {
 footer .copyright {
     text-align: center;
     color: var(--secondary-color);
+    border-top: 1px solid var(--secondary-color);
 }

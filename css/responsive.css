@@ -1,1 +1,124 @@
-/* Media Query 1170px */
+@import url(style.css);
+
+/* Media Query 799px */
+@media (max-width:799px) {
+
+    .section-p {
+        padding: 40px 40px;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0px;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: var(--bg-white);
+        box-shadow: 0px 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0px 0px 10px;
+        transition: 0.3s ease;
+    }
+
+    #navbar .active {
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile {
+        text-decoration: none;
+        color: var(--primary-color);
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #mobile a {
+        text-decoration: none;
+        color: var(--primary-color);
+        font-size: 24px;
+        padding-right: 10px;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: var(--primary-color);
+        font-size: 24px;
+    }
+
+    .bag {
+        display: none;
+    }
+
+    #hero {
+        height: 90vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+
+    #feature {
+        justify-content: center;
+    }
+
+    #feature .fe-box {
+        margin: 15px 15px;
+    }
+
+    #product1 .pro-container {
+        justify-content: center;
+    }
+
+    #product1 .pro {
+        margin: 15px;
+    }
+
+    #banner {
+        height: 20vh;
+    }
+
+    #ads-banner .banner-box {
+        min-width: 100%;
+        height: 30vh;
+    }
+
+    #ads-banner .box1 {
+        margin-top: 10px;
+    }
+
+    #ev-banner {
+        padding: 0px 40px;
+    }
+
+    #ev-banner .banner-box {
+        width: 28%;
+    }
+
+    #newsletter .form {
+        width: 60%;
+    }
+
+    #footer .col {
+        width: 50%;
+    }
+}
+
+@media (max-width: 477px) {
+
+    #header{
+        padding: 10px 30px;
+    }
+    
+}
